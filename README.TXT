@@ -23,3 +23,31 @@ Everything else could be pretty much the same.
 
 
 Note: This project does not implement adequate handling of errors.
+
+Part 2 Answers
+
+21. No value was set, so it's 00:00
+23. 60, you can also set its hours to 1 with setTime
+24. NumberDisplay digit = new NumberDisplay(10);
+25. public class Rectangle
+    {
+        private int len;
+        private int wdt;
+        
+        public Rectangle(int length, int width)
+        {
+            len = length;
+            wdt = width;
+        }
+    }
+    
+    Rectangle window = new Rectangle (l, w);
+26. It automatically sets the time to what you specify with setTime
+27. There's no reason to update the display since the time is predetermined
+    in the second one
+28. p1.print("name", true)
+    p1.print("bettername", false)
+    p1.getStatus(0)
+    p1.getStatus(69)
+29. Square, Triangle, Circle
+30. changeSize, moveHorizontal, moveVertical, makeVisible
