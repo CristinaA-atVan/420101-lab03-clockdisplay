@@ -57,3 +57,4 @@ Part 2 Answers
 34. Everything above 0
 35. Everything above 0
 37. I'm sorry I tried hard to make a 12h clock with the other method and couldn't
+52. I am so unbelievably confused what do you want me to do

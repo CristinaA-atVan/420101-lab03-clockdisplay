@@ -22,12 +22,16 @@ public class AltClockDisplay
      * Constructor for AltClockDisplay objects. This constructor 
      * creates a new clock set at 00:00.
      * Changed to a 12-hour clock for Question 37 but failed
+     * Extracts system time for Question 51, but I have no clue what to do
+     * with it
      */
     public AltClockDisplay()
     {
-        hours = new NumberDisplay(24);
-        minutes = new NumberDisplay(60);
-        updateDisplay();
+        long millis = System.currentTimeMillis();
+        long seconds = millis / 1000;
+        // use a ‘cast’ to convert long integers to int.
+        int currentMinutes = (int) (seconds / 60 % 60);
+        int currentHours = (int) (seconds / (60 * 60) % 24);
     }
 
     /**
