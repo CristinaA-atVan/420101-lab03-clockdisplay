@@ -51,3 +51,9 @@ Part 2 Answers
     p1.getStatus(69)
 29. Square, Triangle, Circle
 30. changeSize, moveHorizontal, moveVertical, makeVisible
+31. No
+32. 2.67
+33. Numbers are rounded down. The second number can't be negative
+34. Everything above 0
+35. Everything above 0
+37. I'm sorry I tried hard to make a 12h clock with the other method and couldn't

@@ -1,6 +1,6 @@
 
 /**
- * The ClockDisplay class implements a digital clock display for a
+ * The AltClockDisplay class implements a digital clock display for a
  * European-style 24 hour clock. The clock shows hours and minutes. The 
  * range of the clock is 00:00 (midnight) to 23:59 (one minute before 
  * midnight).
@@ -12,33 +12,33 @@
  * @author Michael Kölling and David J. Barnes
  * @version 7.0
  */
-public class ClockDisplay
+public class AltClockDisplay
 {
-    private HourDisplay hours;
+    private NumberDisplay hours;
     private NumberDisplay minutes;
     private String displayString;    // simulates the actual display
     
     /**
-     * Constructor for ClockDisplay objects. This constructor 
+     * Constructor for AltClockDisplay objects. This constructor 
      * creates a new clock set at 00:00.
-     * Changed to a 12-hour clock for Question 36
+     * Changed to a 12-hour clock for Question 37 but failed
      */
-    public ClockDisplay()
+    public AltClockDisplay()
     {
-        hours = new HourDisplay(12);
+        hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
         updateDisplay();
     }
 
     /**
-     * Constructor for ClockDisplay objects. This constructor
+     * Constructor for AltClockDisplay objects. This constructor
      * creates a new clock set at the time specified by the 
      * parameters.
-     * Changed to a 12-hour clock for Question 36
+     * Changed to a 12-hour clock for Question 37 but failed
      */
-    public ClockDisplay(int hour, int minute)
+    public AltClockDisplay(int hour, int minute)
     {
-        hours = new HourDisplay(12);
+        hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
         setTime(hour, minute);
     }
